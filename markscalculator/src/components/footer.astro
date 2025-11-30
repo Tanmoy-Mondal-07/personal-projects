@@ -86,20 +86,36 @@ const navItems = [
                 </ul>
             </div>
 
-            <!-- Powered By -->
-            <div>
-                <h3 class="text-lg font-semibold mb-4 text-(--c3)">
-                    Powered By
-                </h3>
-                <div class="flex items-center gap-3">
-                    <Image
-                        src={astrologo}
-                        alt="Astro Logo"
-                        height="28"
-                        width="28"
-                        class="opacity-90"
-                    />
-                    <span class="text-(--c4) font-medium">Astro</span>
+            <!-- Powered By + Contact -->
+            <div class="h-full space-y-4 mt-5">
+                <!-- Powered By -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 text-(--c3)">
+                        Powered By
+                    </h3>
+                    <div class="flex items-center gap-3">
+                        <Image
+                            src={astrologo}
+                            alt="Astro Logo"
+                            height="28"
+                            width="28"
+                            class="opacity-90"
+                        />
+                        <span class="text-(--c4) font-medium">Astro</span>
+                    </div>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-2 text-(--c3)">
+                        Contact
+                    </h3>
+                    <a
+                        href="mailto:clashrider.humvee499@aleeas.com"
+                        class="text-(--c4) hover:text-(--c3) font-medium transition-colors break-all"
+                    >
+                        clashrider.humvee499@aleeas.com
+                    </a>
                 </div>
             </div>
         </div>

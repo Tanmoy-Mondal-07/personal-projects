@@ -1,10 +1,74 @@
 ---
+import { Image } from "astro:assets";
+import astrologo from "../../public/favicon.svg";
 
+const navItems = [
+    { name: "Home", href: "/" },
+    { name: "What is SGPA?", href: "/what-is-sgpa" },
+    { name: "What is CGPA?", href: "/what-is-cgpa" },
+    { name: "Formulas", href: "/formulas" },
+];
 ---
-<nav class="w-full bg-(--c1) border-b border-(--c2)  py-3">
-  <div class="max-w-6xl px-5 flex items-center">
-    <span class="text-xl font-semibold text-slate-800 dark:text-white">
-      SGPA to Percentage Converter
-    </span>
-  </div>
+
+<nav class="w-full bg-(--c1) border-b border-(--c2)/40 sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-(--c1)/80">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+
+        <!-- Brand -->
+        <a href="/" class="flex items-center gap-3">
+            <!-- <Image
+                src={astrologo}
+                width="28"
+                height="28"
+                alt="SGPA Converter Logo"
+                class="opacity-90"
+            /> -->
+            <span class="text-xl font-semibold bg-gradient-to-r from-(--c2) to-(--c4) bg-clip-text text-transparent">
+                CLASH
+            </span>
+        </a>
+
+        <!-- Desktop Nav -->
+        <ul class="hidden md:flex items-center gap-8">
+            {
+                navItems.map((item) => (
+                    <li>
+                        <a
+                            href={item.href}
+                            class="text-(--c4) hover:text-(--c3) transition-colors font-medium"
+                        >
+                            {item.name}
+                        </a>
+                    </li>
+                ))
+            }
+        </ul>
+
+        <!-- Mobile Hamburger -->
+        <button
+            class="md:hidden text-(--c4) focus:outline-none"
+            aria-label="Toggle Menu"
+            id="mobile-toggle"
+            onclick="document.getElementById('mobile-menu').classList.toggle('hidden')"
+        >
+            ☰
+        </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden border-t border-(--c2)/40 bg-(--c1)">
+        <ul class="flex flex-col py-3 px-6 space-y-3">
+            {
+                navItems.map((item) => (
+                    <li>
+                        <a
+                            href={item.href}
+                            class="block text-(--c4) hover:text-(--c3) transition-colors font-medium"
+                        >
+                            {item.name}
+                        </a>
+                    </li>
+                ))
+            }
+        </ul>
+    </div>
 </nav>
