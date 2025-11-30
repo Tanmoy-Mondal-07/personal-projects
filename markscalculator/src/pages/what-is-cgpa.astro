@@ -1,0 +1,136 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const title = "What is CGPA? - SGPA to CGPA & Percentage Converter";
+const description =
+    "Learn what CGPA (Cumulative Grade Point Average) is, how it is calculated, and how it relates to SGPA and percentage scores.";
+const keywords =
+    "CGPA, SGPA to CGPA, CGPA explanation, grade conversion, percentage calculation";
+const pageUrl = "https://personal-projects-djf.pages.dev/cgpa";
+const socialImage = "https://personal-projects-djf.pages.dev/og-image.jpg";
+---
+
+<Layout {title} {description} {keywords} {pageUrl} {socialImage}>
+    <div class="w-full max-w-3xl mx-auto py-12 px-4 md:py-16 md:px-6">
+        <h1 class="text-3xl md:text-4xl font-bold text-(--c3) mb-6">
+            What is CGPA?
+        </h1>
+
+        <p class="text-(--c4) opacity-80 leading-relaxed mb-8">
+            Last updated: {new Date().toLocaleDateString("en-US")}
+        </p>
+
+        <div
+            class="bg-(--c2)/40 backdrop-blur border border-(--c3)/20 rounded-2xl p-6 md:p-8 space-y-6 text-(--c4)"
+        >
+            <!-- 1. Definition -->
+            <section>
+                <h2 class="text-xl font-semibold text-(--c3) mb-2">
+                    1. Definition of CGPA
+                </h2>
+                <p class="opacity-90 leading-relaxed">
+                    CGPA stands for <strong
+                        >Cumulative Grade Point Average</strong
+                    >. It is the average of your SGPA (Semester Grade Point
+                    Average) across all semesters in your degree program. CGPA
+                    provides an overall measure of your academic performance.
+                </p>
+            </section>
+
+            <!-- 2. How CGPA is Calculated -->
+            <section>
+                <h2 class="text-xl font-semibold text-(--c3) mb-2">
+                    2. How CGPA is Calculated
+                </h2>
+                <p class="opacity-90 leading-relaxed mb-4">
+                    CGPA is typically calculated as a weighted average of your
+                    SGPA scores, depending on the credits of each semester or
+                    course.
+                </p>
+                <p class="opacity-90 leading-relaxed">
+                    <strong>Formula (common):</strong>
+                    <br />
+                    CGPA = (SGPA1 x Credits1 + SGPA2 x Credits2 + … + SGPA_n x Credits_n)
+                    ÷ Total Credits
+                </p>
+            </section>
+
+            <!-- 3. CGPA to Percentage -->
+            <section>
+                <h2 class="text-xl font-semibold text-(--c3) mb-2">
+                    3. CGPA to Percentage Conversion
+                </h2>
+                <p class="opacity-90 leading-relaxed mb-4">
+                    Many universities provide a simple formula to convert CGPA
+                    to percentage. One common formula is:
+                </p>
+                <ul class="list-disc pl-6 opacity-90 space-y-2">
+                    <li>
+                        Percentage = (CGPA - 0.75) x 10 (used in VTU, for
+                        example)
+                    </li>
+                    <li>Some universities may use: Percentage = CGPA x 9.5</li>
+                </ul>
+                <p class="opacity-90 leading-relaxed">
+                    Always check your university's official guidelines for the
+                    exact formula.
+                </p>
+            </section>
+
+            <!-- 4. Why CGPA Matters -->
+            <section>
+                <h2 class="text-xl font-semibold text-(--c3) mb-2">
+                    4. Why CGPA Matters
+                </h2>
+                <p class="opacity-90 leading-relaxed">CGPA is important for:</p>
+                <ul class="list-disc pl-6 opacity-90 space-y-2">
+                    <li>
+                        College applications, higher education, or scholarships
+                    </li>
+                    <li>
+                        Job applications and eligibility criteria for many MNCs
+                    </li>
+                    <li>
+                        Understanding your overall academic performance in a
+                        single number
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 5. Tips -->
+            <section>
+                <h2 class="text-xl font-semibold text-(--c3) mb-2">
+                    5. Tips for Accurate Calculation
+                </h2>
+                <ul class="list-disc pl-6 opacity-90 space-y-2">
+                    <li>
+                        Ensure you include all semesters in your calculation
+                    </li>
+                    <li>
+                        Use correct credit points if your university assigns
+                        weight to each semester
+                    </li>
+                    <li>
+                        Use official formulas provided by your university when
+                        converting CGPA to percentage
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- Teaser to Formulas Page -->
+        <div
+            class="mt-10 bg-(--c2)/50 rounded-2xl p-6 md:p-8 border border-(--c3)/10 shadow-sm text-center"
+        >
+            <p class="opacity-90 text-(--c4) mb-3">
+                We support formulas from VTU, MAKAUT, CBSE, DU & more.
+            </p>
+            <a
+                href="/formulas"
+                class="text-(--c3) font-semibold hover:underline"
+            >
+                Read all formulas → /formulas
+            </a>
+        </div>
+    </div>
+</Layout>

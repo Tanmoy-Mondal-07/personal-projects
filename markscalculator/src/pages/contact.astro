@@ -1,0 +1,72 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const title = "Contact – SGPA to CGPA & Percentage Converter";
+const description =
+    "Contact page for the SGPA to CGPA & Percentage Converter. Reach out for questions, feedback, or issues.";
+const keywords = "contact, support, sgpa cgpa converter contact";
+const pageUrl = "https://personal-projects-djf.pages.dev/contact";
+const socialImage = "https://personal-projects-djf.pages.dev/og-image.jpg";
+---
+
+<Layout {title} {description} {keywords} {pageUrl} {socialImage}>
+    <div class="w-full max-w-3xl mx-auto py-12 px-4 md:py-16 md:px-6">
+        <h1 class="text-3xl md:text-4xl font-bold text-(--c3) mb-6">
+            Contact Us
+        </h1>
+
+        <p class="text-(--c4) opacity-80 leading-relaxed mb-8">
+            Last updated: {new Date().toLocaleDateString("en-US")}
+        </p>
+
+        <div
+            class="bg-(--c2)/40 backdrop-blur border border-(--c3)/20 rounded-2xl p-6 md:p-8 space-y-6 text-(--c4)"
+        >
+            <!-- Intro -->
+            <section>
+                <h2 class="text-xl font-semibold text-(--c3) mb-2">
+                    1. Get in Touch
+                </h2>
+                <p class="opacity-90 leading-relaxed">
+                    If you have questions, suggestions, or feedback regarding
+                    the SGPA to CGPA & Percentage Converter, feel free to reach
+                    out. We appreciate your input and will do our best to
+                    respond.
+                </p>
+            </section>
+
+            <!-- Contact Email -->
+            <section>
+                <h2 class="text-xl font-semibold text-(--c3) mb-2">2. Email</h2>
+                <p class="opacity-90 leading-relaxed">
+                    You can email us directly at:
+                    <br />
+                    📧 <strong>your-email@example.com</strong>
+                </p>
+            </section>
+
+            <!-- Response Note -->
+            <section>
+                <h2 class="text-xl font-semibold text-(--c3) mb-2">
+                    3. Response Time
+                </h2>
+                <p class="opacity-90 leading-relaxed">
+                    We typically respond within 2–3 business days. For urgent
+                    technical issues, please mention “URGENT” in the subject
+                    line.
+                </p>
+            </section>
+
+            <!-- Disclaimer -->
+            <section>
+                <h2 class="text-xl font-semibold text-(--c3) mb-2">
+                    5. Important Notice
+                </h2>
+                <p class="opacity-90 leading-relaxed">
+                    Please do not send sensitive or confidential information.
+                    This contact channel is meant for general inquiries only.
+                </p>
+            </section>
+        </div>
+    </div>
+</Layout>

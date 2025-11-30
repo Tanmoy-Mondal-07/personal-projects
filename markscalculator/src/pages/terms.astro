@@ -1,0 +1,141 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const title = "Terms & Conditions - SGPA to CGPA & Percentage Converter";
+const description =
+    "Terms & Conditions for using the SGPA to CGPA & Percentage Converter. Learn how you may use the tool responsibly.";
+const keywords =
+    "terms and conditions, sgpa cgpa converter terms, usage policy";
+const pageUrl = "https://personal-projects-djf.pages.dev/terms";
+const socialImage = "https://personal-projects-djf.pages.dev/og-image.jpg";
+---
+
+<Layout {title} {description} {keywords} {pageUrl} {socialImage}>
+    <div class="w-full max-w-3xl mx-auto py-12 px-4 md:py-16 md:px-6">
+        <h1 class="text-3xl md:text-4xl font-bold text-(--c3) mb-6">
+            Terms & Conditions
+        </h1>
+
+        <p class="text-(--c4) opacity-80 leading-relaxed mb-8">
+            Last updated: {new Date().toLocaleDateString("en-US")}
+        </p>
+
+        <div
+            class="bg-(--c2)/40 backdrop-blur border border-(--c3)/20 rounded-2xl p-6 md:p-8 space-y-6 text-(--c4)"
+        >
+            <!-- 1. Introduction -->
+            <section>
+                <h2 class="text-xl font-semibold text-(--c3) mb-2">
+                    1. Introduction
+                </h2>
+                <p class="opacity-90 leading-relaxed">
+                    Welcome to the SGPA to CGPA & Percentage Converter 
+                the website. By accessing or using this
+                    website, you agree to these Terms & Conditions. If you do
+                    not agree, please discontinue use immediately.
+                </p>
+            </section>
+
+            <!-- 2. Use of the Website -->
+            <section>
+                <h2 class="text-xl font-semibold text-(--c3) mb-2">
+                    2. Use of the Website
+                </h2>
+                <p class="opacity-90 leading-relaxed mb-4">
+                    This website provides academic conversion tools for personal
+                    and educational use only.
+                </p>
+                <p class="opacity-90 leading-relaxed">You agree NOT to:</p>
+                <ul class="list-disc pl-6 opacity-90 space-y-2">
+                    <li>Misuse, attack, or attempt to harm the website</li>
+                    <li>
+                        Copy or republish major parts of the website without
+                        permission
+                    </li>
+                    <li>
+                        Use automated bots/scripts to scrape or overload the
+                        website
+                    </li>
+                    <li>
+                        Use the calculated results as official academic
+                        documents
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 3. Accuracy Disclaimer -->
+            <section>
+                <h2 class="text-xl font-semibold text-(--c3) mb-2">
+                    3. Accuracy of Calculations
+                </h2>
+                <p class="opacity-90 leading-relaxed">
+                    Our tools are designed to be helpful, but conversions may
+                    differ based on university rules. We do not guarantee that
+                    results will match official academic calculations. Always
+                    verify with your institution.
+                </p>
+            </section>
+
+            <!-- 4. No Data Collection -->
+            <section>
+                <h2 class="text-xl font-semibold text-(--c3) mb-2">
+                    4. No User Accounts or Data Collection
+                </h2>
+                <p class="opacity-90 leading-relaxed">
+                    We do <strong>not</strong> collect personal information, store
+                    data, or require user accounts. Any data handling by hosting
+                    or advertising providers is described in our Privacy Policy.
+                </p>
+            </section>
+
+            <!-- 5. Third-Party Links -->
+            <section>
+                <h2 class="text-xl font-semibold text-(--c3) mb-2">
+                    5. Third-Party Links
+                </h2>
+                <p class="opacity-90 leading-relaxed">
+                    Our website may include links to external websites. We are
+                    not responsible for their content, availability, or
+                    policies.
+                </p>
+            </section>
+
+            <!-- 6. Intellectual Property -->
+            <section>
+                <h2 class="text-xl font-semibold text-(--c3) mb-2">
+                    6. Intellectual Property
+                </h2>
+                <p class="opacity-90 leading-relaxed">
+                    All text, design, layout, branding, and tools on this
+                    website are protected by copyright. You may not reproduce,
+                    modify, or redistribute significant portions without
+                    permission.
+                </p>
+            </section>
+
+            <!-- 7. Changes to Terms -->
+            <section>
+                <h2 class="text-xl font-semibold text-(--c3) mb-2">
+                    7. Changes to These Terms
+                </h2>
+                <p class="opacity-90 leading-relaxed">
+                    We may update these Terms at any time. Updates will be
+                    reflected by the “Last Updated” date above.
+                </p>
+            </section>
+
+            <!-- 8. Contact -->
+            <section>
+                <h2 class="text-xl font-semibold text-(--c3) mb-2">
+                    8. Contact
+                </h2>
+                <p class="opacity-90 leading-relaxed">
+                    For questions or concerns regarding these Terms &
+                    Conditions, you may contact us at:
+                    <br />
+                    📧 <strong>your-email@example.com</strong>
+                </p>
+            </section>
+        </div>
+    </div>
+</Layout>

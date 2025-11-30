@@ -1,6 +1,8 @@
 ---
 import { SEO } from "astro-seo";
 import "../styles/global.css";
+import Footer from "../components/footer.astro";
+import Navbar from "../components/Navbar.astro";
 const {
 	title = "SGPA to CGPA & Percentage Converter - Free Grade Calculator",
 	description = "Instantly convert your SGPA, CGPA, or YGPA scores to percentage using customizable university formulas (VTU, CBSE, simple x10). Accurate for 10-point and 4-point scales.",
@@ -14,7 +16,7 @@ const socialImage = "https://personal-projects-djf.pages.dev/og-image.jpg";
 <html lang="en">
 	<head>
 		<meta name="viewport" content="width=device-width" />
-		<meta name="google-adsense-account" content="ca-pub-6676977391503116">
+		<meta name="google-adsense-account" content="ca-pub-6676977391503116" />
 		<meta charset="utf-8" />
 		<SEO
 			title={title}
@@ -40,7 +42,7 @@ const socialImage = "https://personal-projects-djf.pages.dev/og-image.jpg";
 					{
 						rel: "icon",
 						type: "image/svg+xml",
-						href: "/icon.png",
+						href: "/icon.svg",
 					},
 					{ rel: "canonical", href: pageUrl },
 				],
@@ -55,107 +57,35 @@ const socialImage = "https://personal-projects-djf.pages.dev/og-image.jpg";
 			async
 			src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6676977391503116"
 			crossorigin="anonymous"></script>
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "WebApplication",
+				"name": "SGPA to CGPA & Percentage Converter",
+				"url": "https://personal-projects-djf.pages.dev",
+				"description": "Instant SGPA, CGPA, YGPA and percentage conversion with support for 10-point and 4-point scales using customizable university formulas (VTU, CBSE, simple x10).",
+				"applicationCategory": "EducationalApplication",
+				"operatingSystem": "All",
+				"creator": {
+					"@type": "Person",
+					"name": "Tanmoy Mondal",
+					"url": "https://tanmoymondal.pages.dev",
+					"sameAs": [
+						"https://github.com/Tanmoy-Mondal-07",
+						"https://www.linkedin.com/in/tanmoy-mondal07"
+					]
+				}
+			}
+		</script>
 	</head>
 
 	<body
 		class="min-h-screen bg-(--c1) text-(--c4) font-sans selection:bg-(--c3) selection:text-(--c1)"
 	>
-		<main
-			class="w-full min-h-screen flex flex-col items-center py-6 px-4 md:py-12 md:px-6"
-		>
-			<div class="w-full max-w-4xl mx-auto flex flex-col h-full">
-				<header
-					class="text-center mb-6 md:mb-12 animate-in fade-in slide-in-from-top-4 duration-500"
-				>
-					<h1
-						class="text-3xl md:text-5xl font-extrabold text-(--c3) mb-3 md:mb-4 tracking-tight"
-					>
-						Grade Converter
-					</h1>
-					<p
-						class="text-base md:text-xl text-(--c4) opacity-80 max-w-2xl mx-auto leading-relaxed"
-					>
-						The ultimate tool for converting SGPA, CGPA, and GPA
-						scores to percentage. Fast, accurate, and
-						privacy-friendly.
-					</p>
-				</header>
-
-				<div class="w-full flex justify-center mb-10 md:mb-16">
-					<slot />
-				</div>
-
-				<section
-					class="max-w-3xl mx-auto space-y-8 pb-10 border-t border-(--c3)/20 pt-10 md:pt-16"
-				>
-					<div class="prose prose-invert max-w-none text-(--c4)">
-						<div
-							class="bg-(--c2)/50 rounded-2xl p-6 md:p-8 border border-(--c3)/10 shadow-sm"
-						>
-							<h2
-								class="text-xl md:text-2xl font-bold text-(--c3) mb-4 flex items-center gap-2"
-							>
-								How to use this tool
-							</h2>
-							<p
-								class="leading-7 opacity-90 mb-6 text-sm md:text-base"
-							>
-								Our free conversion tool simplifies calculating
-								your final percentage based on semester scores.
-								Use the <span class="text-(--c3) font-semibold"
-									>'To Percentage'</span
-								> tab for standard formulas (like the common <strong
-									>(CGPA - 0.75) × 10</strong
-								> method). Use the <span
-									class="text-(--c3) font-semibold"
-									>'SGPA to CGPA'</span
-								> tab to average your semester scores.
-							</p>
-
-							<h3
-								class="text-lg md:text-xl font-semibold text-(--c3) mb-3"
-							>
-								Why convert grades?
-							</h3>
-							<p
-								class="leading-7 opacity-90 text-sm md:text-base"
-							>
-								Many higher education institutions and MNCs
-								require a percentage equivalent even if your
-								university uses the SGPA system. Using the
-								correct formula ensures your application is
-								accurate and accepted.
-							</p>
-						</div>
-					</div>
-
-					<!-- <footer class="text-center text-xs text-(--c4) opacity-40">
-						<p>
-							&copy; {new Date().getFullYear()} Grade Converter. All
-							calculations happen on your device.
-						</p>
-					</footer> -->
-				</section>
-			</div>
-		</main>
-	</body><script type="application/ld+json">
-		{
-			"@context": "https://schema.org",
-			"@type": "WebApplication",
-			"name": "SGPA to CGPA & Percentage Converter",
-			"url": "https://personal-projects-djf.pages.dev",
-			"description": "Instant SGPA, CGPA, YGPA and percentage conversion with support for 10-point and 4-point scales using customizable university formulas (VTU, CBSE, simple x10).",
-			"applicationCategory": "EducationalApplication",
-			"operatingSystem": "All",
-			"creator": {
-				"@type": "Person",
-				"name": "Tanmoy Mondal",
-				"url": "https://tanmoymondal.pages.dev",
-				"sameAs": [
-					"https://github.com/Tanmoy-Mondal-07",
-					"https://www.linkedin.com/in/tanmoy-mondal07"
-				]
-			}
-		}
-	</script>
+		<Navbar />
+		<div class="w-full flex justify-center mb-10 md:mb-16">
+			<slot />
+		</div>
+		<Footer />
+	</body>
 </html>

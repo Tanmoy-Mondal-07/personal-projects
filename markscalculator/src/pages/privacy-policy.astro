@@ -1,0 +1,140 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const title = "Privacy Policy - SGPA to CGPA & Percentage Converter";
+const description =
+    "Privacy Policy for the SGPA to CGPA & Percentage Converter. We do not collect, store, or share any personal information.";
+const keywords = "privacy policy, sgpa cgpa converter privacy";
+const pageUrl = "https://personal-projects-djf.pages.dev/privacy-policy";
+const socialImage = "https://personal-projects-djf.pages.dev/og-image.jpg";
+---
+
+<Layout {title} {description} {keywords} {pageUrl} {socialImage}>
+    <div class="w-full max-w-3xl mx-auto pt-25 py-12 px-4 md:py-16 md:px-6">
+        <h1 class="text-3xl md:text-4xl font-bold text-(--c3) mb-6">
+            Privacy Policy
+        </h1>
+
+        <p class="text-(--c4) opacity-80 leading-relaxed mb-8">
+            Last updated: {new Date().toLocaleDateString("en-US")}
+        </p>
+
+        <div
+            class="bg-(--c2)/40 backdrop-blur border border-(--c3)/20 rounded-2xl p-6 md:p-8 space-y-6 text-(--c4)"
+        >
+            <section>
+                <h2 class="text-xl font-semibold text-(--c3) mb-2">
+                    1. Introduction
+                </h2>
+                <p class="opacity-90 leading-relaxed">
+                    Welcome to the SGPA to CGPA & Percentage Converter 
+                    the website. Your privacy is extremely
+                    important to us. This Privacy Policy explains how we handle
+                    your data.
+                </p>
+            </section>
+
+            <section>
+                <h2 class="text-xl font-semibold text-(--c3) mb-2">
+                    2. Information We Collect
+                </h2>
+                <p class="opacity-90 leading-relaxed">
+                    We do <strong
+                        >not collect, store, or share any personal data</strong
+                    >.
+                    <br /><br />
+                    ✔ We do not use cookies
+                    <br />
+                    ✔ We do not track users
+                    <br />
+                    ✔ We do not store SGPA/CGPA/percentage inputs
+                    <br />
+                    ✔ All calculations happen in your browser
+                </p>
+            </section>
+
+            <section>
+                <h2 class="text-xl font-semibold text-(--c3) mb-2">
+                    3. Third-Party Services
+                </h2>
+                <p class="opacity-90 leading-relaxed mb-4">
+                    Although we do not collect data, third-party services used
+                    for hosting or ads may collect non-personal data.
+                </p>
+
+                <h3 class="text-lg font-semibold text-(--c3)">
+                    a) Cloudflare (Hosting & Security)
+                </h3>
+                <p class="opacity-90 leading-relaxed mb-4">
+                    Cloudflare may automatically log:
+                </p>
+                <ul class="list-disc pl-6 opacity-90 mb-4">
+                    <li>IP address (may be anonymized)</li>
+                    <li>Browser type & device details</li>
+                    <li>Referrer URL</li>
+                </ul>
+
+                <h3 class="text-lg font-semibold text-(--c3)">
+                    b) Google AdSense (If Ads Are Enabled)
+                </h3>
+                <p class="opacity-90 leading-relaxed">
+                    AdSense may use cookies to show relevant ads and may track
+                    non-personal usage data.
+                </p>
+            </section>
+
+            <section>
+                <h2 class="text-xl font-semibold text-(--c3) mb-2">
+                    4. Cookies
+                </h2>
+                <p class="opacity-90 leading-relaxed">
+                    Our website itself does <strong>not</strong> set cookies. However,
+                    third-party services (e.g., AdSense) may set cookies for technical
+                    or advertising purposes.
+                </p>
+            </section>
+
+            <section>
+                <h2 class="text-xl font-semibold text-(--c3) mb-2">
+                    5. External Links
+                </h2>
+                <p class="opacity-90 leading-relaxed">
+                    We may display links to external websites. We are not
+                    responsible for their content or privacy policies.
+                </p>
+            </section>
+
+            <section>
+                <h2 class="text-xl font-semibold text-(--c3) mb-2">
+                    6. Children’s Privacy
+                </h2>
+                <p class="opacity-90 leading-relaxed">
+                    This site is not intended for children under 13. No data is
+                    knowingly collected from children.
+                </p>
+            </section>
+
+            <section>
+                <h2 class="text-xl font-semibold text-(--c3) mb-2">
+                    7. Changes to This Policy
+                </h2>
+                <p class="opacity-90 leading-relaxed">
+                    We may update this Privacy Policy over time. The updated
+                    date will always be displayed at the top.
+                </p>
+            </section>
+
+            <section>
+                <h2 class="text-xl font-semibold text-(--c3) mb-2">
+                    8. Contact Us
+                </h2>
+                <p class="opacity-90 leading-relaxed">
+                    If you have questions about this Privacy Policy, contact us
+                    at:
+                    <br />
+                    📧 <strong>your-email@example.com</strong>
+                </p>
+            </section>
+        </div>
+    </div>
+</Layout>

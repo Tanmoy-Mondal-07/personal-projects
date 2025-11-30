@@ -1,0 +1,171 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const title = "What is SGPA? Complete Guide for Students";
+const description =
+    "Understand what SGPA means, how it is calculated, its importance, formulas, examples, and the difference between SGPA, CGPA, and percentage.";
+const keywords =
+    "what is sgpa, sgpa meaning, sgpa calculator, sgpa formula, sgpa cgpa difference, how sgpa is calculated";
+const pageUrl = "https://personal-projects-djf.pages.dev/what-is-sgpa";
+const socialImage = "https://personal-projects-djf.pages.dev/og-image.jpg";
+---
+
+<Layout {title} {description} {keywords} {pageUrl} {socialImage}>
+    <div class="w-full max-w-3xl mx-auto py-12 px-4 md:py-16 md:px-6">
+        <h1 class="text-3xl md:text-4xl font-bold text-(--c3) mb-6">
+            What is SGPA? Complete Guide
+        </h1>
+
+        <p class="text-(--c4) opacity-80 leading-relaxed mb-8">
+            Last updated: {new Date().toLocaleDateString("en-US")}
+        </p>
+
+        <div
+            class="bg-(--c2)/40 backdrop-blur border border-(--c3)/20 rounded-2xl p-6 md:p-8 space-y-8 text-(--c4)"
+        >
+            <!-- Introduction -->
+            <section>
+                <h2 class="text-2xl font-semibold text-(--c3) mb-3">
+                    1. What is SGPA?
+                </h2>
+                <p class="opacity-90 leading-relaxed">
+                    <strong>SGPA (Semester Grade Point Average)</strong> is the average
+                    grade point a student earns in a single semester. It represents
+                    your performance in all the subjects you took during that semester.
+                </p>
+            </section>
+
+            <!-- How SGPA is calculated -->
+            <section>
+                <h2 class="text-2xl font-semibold text-(--c3) mb-3">
+                    2. How is SGPA calculated?
+                </h2>
+                <p class="opacity-90 leading-relaxed mb-4">
+                    SGPA is calculated using a weighted formula based on:
+                </p>
+                <ul class="list-disc pl-6 space-y-1 opacity-90">
+                    <li>Credit of each subject</li>
+                    <li>Grade points earned in each subject</li>
+                </ul>
+
+                <p class="opacity-90 leading-relaxed mt-4">The formula is:</p>
+
+                <pre
+                    class="bg-black/20 p-4 rounded-xl text-sm overflow-auto">
+SGPA = (Sum of (Grade Points × Credits)) ÷ (Total Credits)
+        </pre>
+            </section>
+
+            <!-- Example -->
+            <section>
+                <h2 class="text-2xl font-semibold text-(--c3) mb-3">
+                    3. Example of SGPA Calculation
+                </h2>
+
+                <p class="opacity-90 leading-relaxed mb-4">
+                    Suppose you have 5 subjects:
+                </p>
+
+                <ul class="list-disc pl-6 space-y-1 opacity-90 mb-4">
+                    <li>Subject 1 → Grade A (9) × 4 credits</li>
+                    <li>Subject 2 → Grade B (8) × 3 credits</li>
+                    <li>Subject 3 → Grade A+ (10) × 3 credits</li>
+                    <li>Subject 4 → Grade C (7) × 2 credits</li>
+                    <li>Subject 5 → Grade B (8) × 3 credits</li>
+                </ul>
+
+                <p class="opacity-90 leading-relaxed">
+                    Total = (9×4 + 8×3 + 10×3 + 7×2 + 8×3) ÷ (4+3+3+2+3)<br />
+                    <strong>SGPA = 8.43</strong>
+                </p>
+            </section>
+
+            <!-- SGPA vs CGPA -->
+            <section>
+                <h2 class="text-2xl font-semibold text-(--c3) mb-3">
+                    4. SGPA vs CGPA
+                </h2>
+                <p class="opacity-90 leading-relaxed mb-4">
+                    Many students confuse SGPA with CGPA.
+                </p>
+
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div
+                        class="p-4 bg-(--c2)/60 border border-(--c3)/20 rounded-xl"
+                    >
+                        <h3 class="font-semibold text-(--c3) mb-2">SGPA</h3>
+                        <p class="text-sm opacity-90">
+                            Calculated for <strong>one semester</strong>.
+                        </p>
+                    </div>
+                    <div
+                        class="p-4 bg-(--c2)/60 border border-(--c3)/20 rounded-xl"
+                    >
+                        <h3 class="font-semibold text-(--c3) mb-2">CGPA</h3>
+                        <p class="text-sm opacity-90">
+                            Calculated for <strong
+                                >all semesters combined</strong
+                            >.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Conversion to Percentage -->
+            <section>
+                <h2 class="text-2xl font-semibold text-(--c3) mb-3">
+                    5. How to Convert SGPA to Percentage?
+                </h2>
+                <p class="opacity-90 leading-relaxed">
+                    Different universities use different formulas. Common one:
+                </p>
+
+                <pre
+                    class="bg-black/20 p-4 rounded-xl text-sm overflow-auto">
+Percentage = (SGPA – 0.75) × 10
+        </pre>
+
+                <p class="opacity-90 leading-relaxed mt-4">
+                    For university-specific formulas, see:
+                    <a
+                        href="/formulas"
+                        class="text-(--c3) underline hover:text-(--c4)"
+                    >
+                        VTU, MAKAUT, CBSE, DU Conversion Formulas →
+                    </a>
+                </p>
+            </section>
+
+            <!-- Why SGPA matters -->
+            <section>
+                <h2 class="text-2xl font-semibold text-(--c3) mb-3">
+                    6. Why SGPA Matters
+                </h2>
+                <p class="opacity-90 leading-relaxed">SGPA is important for:</p>
+
+                <ul class="list-disc pl-6 space-y-1 opacity-90">
+                    <li>Scholarship eligibility</li>
+                    <li>College/University admissions</li>
+                    <li>
+                        Job applications (Companies often ask for percentage)
+                    </li>
+                    <li>Tracking academic performance</li>
+                </ul>
+            </section>
+
+            <!-- CTA -->
+            <section class="pt-4 border-t border-(--c3)/20">
+                <p class="opacity-90 leading-relaxed">
+                    Want to convert your SGPA instantly?
+                </p>
+
+                <a
+                    href="/"
+                    class="inline-block mt-4 px-6 py-3 rounded-xl bg-(--c3) text-(--c1) font-semibold hover:opacity-90 transition"
+                >
+                    Use SGPA to Percentage Converter →
+                </a>
+            </section>
+        </div>
+    </div>
+</Layout>

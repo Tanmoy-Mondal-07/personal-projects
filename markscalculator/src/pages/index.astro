@@ -4,10 +4,31 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-  <div
-    class="w-full
+  <main
+    class="w-full min-h-screen flex flex-col items-center py-6 px-4 md:py-12 md:px-6"
+  >
+    <div class="w-full max-w-4xl mx-auto flex flex-col h-full">
+      <header
+        class="text-center mb-6 md:mb-12 animate-in fade-in slide-in-from-top-4 duration-500"
+      >
+        <h1
+          class="text-3xl md:text-5xl font-bold text-(--c3) mb-3 md:mb-4 tracking-tight"
+        >
+          Grade Converter
+        </h1>
+        <p
+          class="text-base md:text-xl text-(--c4) opacity-80 max-w-2xl mx-auto leading-relaxed"
+        >
+          The ultimate tool for converting SGPA, CGPA, and GPA scores to
+          percentage. Fast, accurate, and privacy-friendly.
+        </p>
+      </header>
+
+      <div
+        class="w-full
       max-w-[580px]
       mx-auto
+      mb-20
       
       md:p-2
       md:border md:border-(--c3)/30
@@ -17,7 +38,71 @@ import Layout from "../layouts/Layout.astro";
       md:backdrop-blur-sm
       
       transition-all duration-300"
-  >
-    <AstroGpaCalculator client:load />
-  </div>
+      >
+        <AstroGpaCalculator client:load />
+      </div>
+
+      <section
+        class="max-w-3xl mx-auto space-y-8 pb-10 border-t border-(--c3)/20 pt-10 md:pt-16"
+      >
+        <div class="prose prose-invert max-w-none text-(--c4)">
+          <div
+            class="bg-(--c2)/50 rounded-2xl p-6 md:p-8 border border-(--c3)/10 shadow-sm"
+          >
+            <h2
+              class="text-xl md:text-2xl font-bold text-(--c3) mb-4 flex items-center gap-2"
+            >
+              How to use this tool
+            </h2>
+
+            <p class="leading-7 opacity-90 mb-6 text-sm md:text-base">
+              Our free conversion tool simplifies calculating your final
+              percentage based on semester scores. Use the
+              <span class="text-(--c3) font-semibold">'To Percentage'</span>
+              tab for standard formulas (like the common
+              <strong>(CGPA - 0.75) x 10</strong> method). Use the
+              <span class="text-(--c3) font-semibold">'SGPA to CGPA'</span>
+              tab to average your semester scores.
+            </p>
+
+            <h3 class="text-lg md:text-xl font-semibold text-(--c3) mb-3">
+              Why convert grades?
+            </h3>
+            <p class="leading-7 opacity-90 text-sm md:text-base mb-6">
+              Many higher education institutions and MNCs require a percentage
+              equivalent even if your university uses the SGPA system. Using the
+              correct formula ensures your application is accurate and accepted.
+            </p>
+
+            <!-- Formula Guide Teaser Section -->
+            <div
+              class="mt-8 p-4 md:p-5 rounded-xl bg-(--c2)/40 border border-(--c3)/20"
+            >
+              <h3 class="text-lg md:text-xl font-semibold text-(--c3) mb-2">
+                University-Specific Conversion Formulas
+              </h3>
+              <p class="text-sm md:text-base opacity-90 leading-relaxed mb-4">
+                Our calculator supports popular university conversion methods
+                like
+                <span class="font-semibold text-(--c3)">VTU</span>,
+                <span class="font-semibold text-(--c3)">MAKAUT</span>,
+                <span class="font-semibold text-(--c3)">CBSE</span>, and
+                <span class="font-semibold text-(--c3)"
+                  >Delhi University (DU)</span
+                >. Each university follows slightly different rules for
+                converting SGPA, CGPA, and grades to percentage.
+              </p>
+
+              <a
+                href="/formulas"
+                class="inline-block mt-1 text-(--c3) hover:text-(--c4) font-medium underline underline-offset-4 transition-colors"
+              >
+                Read all supported formulas →
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
 </Layout>

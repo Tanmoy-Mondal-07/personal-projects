@@ -1,0 +1,114 @@
+---
+import { Image } from "astro:assets";
+import astrologo from "../../public/favicon.svg";
+
+const navItems = [
+    { name: "Home", href: "/" },
+    { name: "What is SGPA?", href: "/what-is-sgpa" },
+    { name: "What is CGPA?", href: "/what-is-cgpa" },
+    { name: "Formulas", href: "/formulas" },
+];
+---
+
+<footer class="border-t bg-(--c1) py-16">
+    <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+            <!-- Brand Section -->
+            <div>
+                <div class="flex items-center gap-3 mb-4">
+                    <span
+                        class="text-xl font-semibold tracking-wide bg-gradient-to-r from-(--c2) to-(--c4) bg-clip-text text-transparent"
+                    >
+                        CLASH
+                    </span>
+                </div>
+
+                <p class="text-(--c3) leading-relaxed mb-6">
+                    The ultimate tool for converting SGPA, CGPA, and GPA scores
+                    to percentage. Fast, accurate, and privacy-friendly.
+                </p>
+            </div>
+
+            <!-- Navigation -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4 text-(--c3)">
+                    Navigation
+                </h3>
+                <ul class="space-y-2">
+                    {
+                        navItems.map((item) => (
+                            <li>
+                                <a
+                                    href={item.href}
+                                    class="text-(--c4) hover:text-(--c3) transition-colors"
+                                >
+                                    {item.name}
+                                </a>
+                            </li>
+                        ))
+                    }
+                </ul>
+            </div>
+
+            <!-- Legal Links -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4 text-(--c3)">Legal</h3>
+                <ul class="space-y-2">
+                    <li>
+                        <a
+                            href="/privacy-policy"
+                            class="text-(--c4) hover:text-(--c3)"
+                        >
+                            Privacy Policy
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/terms" class="text-(--c4) hover:text-(--c3)">
+                            Terms of Use
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="/disclaimer"
+                            class="text-(--c4) hover:text-(--c3)"
+                        >
+                            Disclaimer
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="/contact"
+                            class="text-(--c4) hover:text-(--c3)"
+                        >
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Powered By -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4 text-(--c3)">
+                    Powered By
+                </h3>
+                <div class="flex items-center gap-3">
+                    <Image
+                        src={astrologo}
+                        alt="Astro Logo"
+                        height="28"
+                        width="28"
+                        class="opacity-90"
+                    />
+                    <span class="text-(--c4) font-medium">Astro</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="mt-16 pt-8 border-t border-(--c2)/20 text-center">
+            <p class="text-(--c3) text-sm">
+                © {new Date().getFullYear()} Clash. All rights reserved.
+            </p>
+        </div>
+    </div>
+</footer>
