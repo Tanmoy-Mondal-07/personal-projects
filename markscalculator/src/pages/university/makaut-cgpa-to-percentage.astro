@@ -1,0 +1,146 @@
+---
+import AstroGpaCalculator from "../../components/AstroGpaCalculator";
+import Layout from "../../layouts/Layout.astro";
+
+const title =
+  "MAKAUT CGPA to Percentage Calculator (YGPA Included) | WBUT Official Conversion";
+const description =
+  "Convert MAKAUT/WBUT CGPA, SGPA, and YGPA to percentage using the official grade brackets. Free online MAKAUT percentage calculator with accurate university-specific rules.";
+const keywords =
+  "MAKAUT CGPA to Percentage, WBUT CGPA conversion, MAKAUT YGPA calculator, MAKAUT SGPA to percentage, WBUT grade conversion, MAKAUT percentage formula, YGPA to percentage MAKAUT, makaut cgpa calculator";
+const pageUrl = "https://personal-projects-djf.pages.dev/university/makaut-cgpa-to-percentage";
+---
+
+<Layout {title} {description} {keywords} {pageUrl}>
+  <main
+    class="w-full min-h-screen flex flex-col items-center py-6 px-4 md:py-12 md:px-6"
+  >
+    <div class="w-full max-w-4xl mx-auto flex flex-col h-full">
+      <!-- HEADER -->
+      <header
+        class="text-center mb-6 md:mb-12 animate-in fade-in slide-in-from-top-4 duration-500"
+      >
+        <h1
+          class="text-3xl md:text-5xl font-bold text-(--c3) mb-3 md:mb-4 tracking-tight"
+        >
+          MAKAUT CGPA to Percentage Calculator (WBUT)
+        </h1>
+        <p
+          class="text-base md:text-xl text-(--c4) opacity-80 max-w-2xl mx-auto leading-relaxed"
+        >
+          Convert your MAKAUT / WBUT SGPA, CGPA, and YGPA to percentage using the
+          official university grade brackets. Accurate, fast, and trusted for
+          placement applications.
+        </p>
+      </header>
+
+      <!-- CALCULATOR -->
+      <div
+        class="w-full max-w-[580px] mx-auto mb-20 md:p-2 md:border md:border-(--c3)/30 md:bg-(--c2) md:shadow-2xl md:rounded-2xl md:backdrop-blur-sm transition-all duration-300"
+      >
+        <AstroGpaCalculator client:load />
+      </div>
+
+      <!-- SEO CONTENT -->
+      <section
+        class="max-w-3xl mx-auto space-y-8 pb-10 border-t border-(--c3)/20 pt-10 md:pt-16"
+      >
+        <div class="prose prose-invert max-w-none text-(--c4)">
+          <div
+            class="bg-(--c2)/50 rounded-2xl p-6 md:p-8 border border-(--c3)/10 shadow-sm"
+          >
+            <!-- OFFICIAL RULES -->
+            <h2 class="text-2xl font-bold text-(--c3) mb-4">
+              Official MAKAUT / WBUT CGPA to Percentage Conversion
+            </h2>
+
+            <p class="leading-7 opacity-90 mb-6 text-sm md:text-base">
+              MAKAUT (formerly WBUT) does not use a single mathematical formula.
+              Instead, it follows an official <strong>grade bracket</strong>
+              system to convert CGPA or YGPA into percentage. These brackets are
+              used widely for:
+            </p>
+
+            <ul class="list-disc pl-6 opacity-90 mb-6 space-y-1">
+              <li>University transcripts</li>
+              <li>Placement and job applications</li>
+              <li>Government exams</li>
+              <li>Higher studies & WES evaluations</li>
+            </ul>
+
+            <!-- BRACKET TABLE -->
+            <div
+              class="p-4 bg-(--c2)/40 border border-(--c3)/20 rounded-xl mb-6"
+            >
+              <h3 class="text-xl font-semibold text-(--c3) mb-3">
+                MAKAUT CGPA → Percentage Brackets
+              </h3>
+              <ul class="list-disc pl-6 space-y-2">
+                <li><strong>CGPA ≥ 9.0</strong> → <strong>90% and above</strong></li>
+                <li><strong>CGPA 8.0 - 8.9</strong> → <strong>80% - 89%</strong></li>
+                <li><strong>CGPA 7.0 - 7.9</strong> → <strong>70% - 79%</strong></li>
+                <li><strong>CGPA 6.0 - 6.9</strong> → <strong>60% - 69%</strong></li>
+                <li><strong>CGPA below 6</strong> → <strong>Below 60%</strong></li>
+              </ul>
+            </div>
+
+            <!-- YGPA -->
+            <h3 class="text-xl font-semibold text-(--c3) mb-3">
+              YGPA to Percentage (MAKAUT)
+            </h3>
+            <p class="leading-7 opacity-90 mb-4 text-sm md:text-base">
+              MAKAUT uses the same bracket rule for <strong>YGPA</strong> (Yearly
+              Grade Point Average). If you know your YGPA, select the
+              <span class="font-semibold text-(--c3)">"To Percentage"</span> tab
+              and the calculator will auto-apply the MAKAUT method.
+            </p>
+
+            <!-- HOW TO USE TOOL -->
+            <h3 class="text-xl font-semibold text-(--c3) mb-3">
+              How to Use This MAKAUT Percentage Calculator
+            </h3>
+            <ol class="list-decimal pl-6 opacity-90 space-y-2 text-sm md:text-base">
+              <li>Enter your SGPA, YGPA, or CGPA.</li>
+              <li>Select "<strong>To Percentage</strong>".</li>
+              <li>The calculator applies the MAKAUT grade bracket automatically.</li>
+              <li>View your percentage instantly.</li>
+            </ol>
+
+            <!-- WHY THIS IS IMPORTANT -->
+            <h3 class="text-xl font-semibold text-(--c3) mb-3">
+              Why MAKAUT Students Need Accurate Conversions
+            </h3>
+            <p class="leading-7 opacity-90 mb-6 text-sm md:text-base">
+              Many MNCs, government exams, and overseas universities require a
+              percentage equivalent even if your college follows the MAKAUT
+              grade system. Using an incorrect formula (like CGPA x 10) will
+              cause application rejection. This page prevents that mistake by
+              using official conversion standards.
+            </p>
+
+            <!-- FORMULA TEASER -->
+            <div
+              class="mt-8 p-4 md:p-5 rounded-xl bg-(--c2)/40 border border-(--c3)/20"
+            >
+              <h3 class="text-lg md:text-xl font-semibold text-(--c3) mb-2">
+                Other University Conversions
+              </h3>
+              <p class="text-sm md:text-base opacity-90 leading-relaxed mb-4">
+                We also support formulas for VTU, CBSE, DU, Anna University,
+                JNTUH, JNTUK and many more. Each university follows different
+                rules for grade-to-percentage conversion.
+              </p>
+
+              <a
+                href="/formulas"
+                class="inline-block mt-1 text-(--c3) hover:text-(--c4) font-medium underline underline-offset-4 transition-colors"
+              >
+                View all supported formulas →
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+</Layout>

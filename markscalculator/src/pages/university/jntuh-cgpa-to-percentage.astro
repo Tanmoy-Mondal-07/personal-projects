@@ -1,0 +1,219 @@
+---
+import AstroGpaCalculator from "../../components/AstroGpaCalculator";
+import Layout from "../../layouts/Layout.astro";
+
+const title =
+    "JNTUH CGPA to Percentage Calculator (Official Formula) | R18, R16 & R22";
+const description =
+    "Convert your JNTUH CGPA to Percentage instantly using the official formula: (CGPA - 0.5) x 10. Supports R18, R16, and R22 regulations for B.Tech and M.Tech students.";
+const keywords =
+    "JNTUH CGPA to Percentage, JNTU Hyderabad Calculator, JNTUH R18 CGPA to percentage, JNTUH R22 formula, JNTUH percentage calculator, SGPA to Percentage JNTU";
+const pageUrl =
+    "https://personal-projects-djf.pages.dev/university/jntuh-cgpa-to-percentage";
+---
+
+<Layout {title} {description} {keywords} {pageUrl}>
+    <main
+        class="w-full min-h-screen flex flex-col items-center py-6 px-4 md:py-12 md:px-6"
+    >
+        <div class="w-full max-w-4xl mx-auto flex flex-col h-full">
+            <header
+                class="text-center mb-6 md:mb-12 animate-in fade-in slide-in-from-top-4 duration-500"
+            >
+                <h1
+                    class="text-3xl md:text-5xl font-bold text-(--c3) mb-3 md:mb-4 tracking-tight"
+                >
+                    JNTUH CGPA to Percentage Calculator
+                </h1>
+                <p
+                    class="text-base md:text-xl text-(--c4) opacity-80 max-w-2xl mx-auto leading-relaxed"
+                >
+                    Convert your JNTU Hyderabad grades instantly. Updated for
+                    R18, R16, and R22 regulations using the official formula:
+                    <strong>(CGPA - 0.5) x 10</strong>.
+                </p>
+            </header>
+
+            <div
+                class="w-full max-w-[580px] mx-auto mb-20 md:p-2 md:border md:border-(--c3)/30 md:bg-(--c2) md:shadow-2xl md:rounded-2xl md:backdrop-blur-sm transition-all duration-300"
+            >
+                <AstroGpaCalculator client:load passformulaPreset="JNTUH" />
+            </div>
+
+            <section
+                class="max-w-3xl mx-auto space-y-8 pb-10 border-t border-(--c3)/20 pt-10 md:pt-16"
+            >
+                <div class="prose prose-invert max-w-none text-(--c4)">
+                    <div
+                        class="bg-(--c2)/50 rounded-2xl p-6 md:p-8 border border-(--c3)/10 shadow-sm"
+                    >
+                        <h2 class="text-2xl font-bold text-(--c3) mb-4">
+                            Official JNTUH R18 & R22 Conversion Formula
+                        </h2>
+
+                        <p
+                            class="leading-7 opacity-90 mb-4 text-sm md:text-base"
+                        >
+                            According to the official academic regulations of
+                            Jawaharlal Nehru Technological University Hyderabad
+                            (JNTUH), the conversion of CGPA into equivalent
+                            percentage is standardized for B.Tech, M.Tech, and
+                            other courses.
+                        </p>
+
+                        <div
+                            class="p-4 bg-(--c2)/50 border border-(--c3)/20 rounded-xl mb-6"
+                        >
+                            <p class="font-semibold text-(--c3)">
+                                <strong>Percentage = (CGPA - 0.5) x 10</strong>
+                            </p>
+                        </div>
+
+                        <p
+                            class="leading-7 opacity-90 text-sm md:text-base mb-6"
+                        >
+                            This formula applies to:
+                        </p>
+                        <ul class="list-disc pl-6 opacity-90 mb-6 space-y-1">
+                            <li>
+                                <strong>R22 Regulation:</strong> Students admitted
+                                from 2022 onwards.
+                            </li>
+                            <li>
+                                <strong>R18 Regulation:</strong> Students admitted
+                                from 2018 onwards.
+                            </li>
+                            <li>
+                                <strong>R19 Regulation:</strong> Students admitted
+                                from 2016 onwards.
+                            </li>
+                        </ul>
+
+                        <h3 class="text-xl font-semibold text-(--c3) mb-3">
+                            ⚠️ Common Confusion: JNTUH vs JNTUK/JNTUA
+                        </h3>
+
+                        <p
+                            class="leading-7 opacity-90 mb-4 text-sm md:text-base"
+                        >
+                            Many students get confused between the formulas of
+                            different JNTU branches. It is crucial to use the
+                            correct one for your university to avoid errors in
+                            placement drives (like TCS, Infosys) or higher
+                            education applications:
+                        </p>
+
+                        <ul
+                            class="list-disc pl-6 opacity-90 space-y-2 text-sm md:text-base mb-6"
+                        >
+                            <li>
+                                <strong>JNTU Hyderabad (JNTUH):</strong> Uses <span
+                                    class="text-(--c3) font-semibold"
+                                    >(CGPA - 0.5) x 10</span
+                                >.
+                                <a
+                                    href="https://jntuh.ac.in/uploads/academics/R22B.Tech.RevisedAcademicRegulations2.pdf"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="text-xs font-medium text-blue-400 hover:text-blue-300 underline underline-offset-2 ml-2"
+                                >
+                                    (Official R22 Document)
+                                </a>
+                            </li>
+                            <li>
+                                <strong>JNTU Kakinada (JNTUK):</strong> Often uses
+                                <span class="opacity-75"
+                                    >(CGPA - 0.75) x 10</span
+                                >.
+                                <a
+                                    href="https://jntukucen.ac.in/wp-content/uploads/2023/11/R16-REGULATIONS.pdf"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="text-xs font-medium text-blue-400 hover:text-blue-300 underline underline-offset-2 ml-2"
+                                >
+                                    (Official R16 Document)
+                                </a>
+                            </li>
+                            <li>
+                                <strong>JNTU Anantapur (JNTUA):</strong> Often uses
+                                <span class="opacity-75">(CGPA - 0.5) x 10</span
+                                >.
+                                <a
+                                    href="https://jntuacep.ac.in/wp-content/uploads/2023/20230829181558.pdf"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="text-xs font-medium text-blue-400 hover:text-blue-300 underline underline-offset-2 ml-2"
+                                >
+                                    (Official R19 Document)
+                                </a>
+                            </li>
+                        </ul>
+
+                        <p
+                            class="text-sm opacity-80 italic border-l-2 border-(--c3) pl-4 my-4"
+                        >
+                            Note: Always verify with your specific semester
+                            marks memo if your batch has a unique notification,
+                            but for the vast majority of JNTUH students, the
+                            -0.5 formula is the standard.
+                        </p>
+
+                        <h3 class="text-xl font-semibold text-(--c3) mb-3">
+                            Calculation Example
+                        </h3>
+
+                        <p
+                            class="leading-7 opacity-90 mb-4 text-sm md:text-base"
+                        >
+                            If you have secured a CGPA of <strong>8.25</strong> in
+                            your B.Tech course:
+                        </p>
+
+                        <ol
+                            class="list-decimal pl-6 opacity-90 space-y-2 text-sm md:text-base"
+                        >
+                            <li>
+                                Subtract 0.5 from your CGPA: <code
+                                    >8.25 - 0.5 = 7.75</code
+                                >
+                            </li>
+                            <li>
+                                Multiply the result by 10: <code
+                                    >7.75 x 10 = 77.5%</code
+                                >
+                            </li>
+                            <li>
+                                Your aggregate percentage is <strong
+                                    >77.5%</strong
+                                >.
+                            </li>
+                        </ol>
+
+                        <div
+                            class="mt-8 p-4 md:p-5 rounded-xl bg-(--c2)/40 border border-(--c3)/20"
+                        >
+                            <h3
+                                class="text-lg md:text-xl font-semibold text-(--c3) mb-2"
+                            >
+                                Looking for other Universities?
+                            </h3>
+                            <p
+                                class="text-sm md:text-base opacity-90 leading-relaxed mb-4"
+                            >
+                                We support official formulas for VTU, Anna
+                                University, CBSE, KTU, and Mumbai University.
+                            </p>
+
+                            <a
+                                href="/formulas"
+                                class="inline-block mt-1 text-(--c3) hover:text-(--c4) font-medium underline underline-offset-4 transition-colors"
+                            >
+                                View all supported formulas →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</Layout>

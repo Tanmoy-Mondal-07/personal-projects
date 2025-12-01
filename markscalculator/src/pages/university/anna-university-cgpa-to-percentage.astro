@@ -1,0 +1,154 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import AstroGpaCalculator from "../../components/AstroGpaCalculator";
+
+const title = "Anna University CGPA to Percentage Calculator (2025 Updated)";
+const description =
+    "Convert Anna University CGPA to percentage instantly using the official formula: Percentage = CGPA x 10. Accurate calculator for AU, CEG, MIT & affiliated colleges.";
+const keywords =
+    "anna university cgpa to percentage, cgpa to percentage anna university, anna university grade calculator, au cgpa converter, anna university percentage formula, mit cgpa percentage, ceg cgpa percentage";
+const pageUrl =
+    "https://personal-projects-djf.pages.dev/university/anna-university-cgpa-to-percentage";
+---
+
+<Layout {title} {description} {keywords} {pageUrl}>
+    <main
+        class="w-full min-h-screen flex flex-col items-center py-6 px-4 md:py-12 md:px-6"
+    >
+        <div class="w-full max-w-4xl mx-auto flex flex-col h-full">
+            <!-- Header -->
+            <header
+                class="text-center mb-6 md:mb-12 animate-in fade-in slide-in-from-top-4 duration-500"
+            >
+                <h1
+                    class="text-3xl md:text-5xl font-bold text-(--c3) mb-3 md:mb-4 tracking-tight"
+                >
+                    Anna University CGPA to Percentage Converter
+                </h1>
+
+                <p
+                    class="text-base md:text-xl text-(--c4) opacity-80 max-w-2xl mx-auto leading-relaxed"
+                >
+                    Convert your <strong>Anna University</strong> CGPA to percentage
+                    using the official AU formula. Supports CEG, MIT, ACT, and all
+                    affiliated colleges.
+                </p>
+            </header>
+
+            <!-- Calculator Card -->
+            <div
+                class="w-full max-w-[580px] mx-auto mb-20
+        md:p-2 md:border md:border-(--c3)/30
+        md:bg-(--c2) md:shadow-2xl md:rounded-2xl md:backdrop-blur-sm
+        transition-all duration-300"
+            >
+                <AstroGpaCalculator client:load passformulaPreset="simple" />
+            </div>
+
+            <!-- Info Section -->
+            <section
+                class="max-w-3xl mx-auto space-y-8 pb-10 border-t border-(--c3)/20 pt-10 md:pt-16"
+            >
+                <div class="prose prose-invert max-w-none text-(--c4)">
+                    <div
+                        class="bg-(--c2)/50 rounded-2xl p-6 md:p-8 border border-(--c3)/10 shadow-sm"
+                    >
+                        <!-- Official Formula -->
+                        <h2
+                            class="text-xl md:text-2xl font-bold text-(--c3) mb-4 flex items-center gap-2"
+                        >
+                            Anna University CGPA to Percentage Formula
+                            (Official)
+                        </h2>
+
+                        <p
+                            class="text-sm md:text-base opacity-90 leading-7 mb-6"
+                        >
+                            Anna University uses the following official
+                            conversion formula:
+                        </p>
+
+                        <div
+                            class="p-4 md:p-5 bg-(--c2)/40 border border-(--c3)/20 rounded-xl mb-6"
+                        >
+                            <p
+                                class="text-lg md:text-xl font-semibold text-(--c3)"
+                            >
+                                <strong>Percentage = CGPA x 10</strong>
+                            </p>
+                        </div>
+
+                        <p
+                            class="text-sm md:text-base opacity-90 leading-7 mb-6"
+                        >
+                            This formula is widely used for:
+                        </p>
+
+                        <ul class="list-disc pl-5 space-y-2 opacity-90">
+                            <li>CEG (College of Engineering, Guindy)</li>
+                            <li>MIT (Madras Institute of Technology)</li>
+                            <li>ACT & SAP Campuses</li>
+                            <li>
+                                All Anna University affiliated colleges in Tamil
+                                Nadu
+                            </li>
+                        </ul>
+
+                        <!-- Why needed -->
+                        <h3
+                            class="text-lg md:text-xl font-semibold text-(--c3) mt-8 mb-3"
+                        >
+                            Why convert CGPA to percentage?
+                        </h3>
+                        <p class="text-sm md:text-base opacity-90 leading-7">
+                            Many companies, government exams, and higher
+                            education programs require percentages for
+                            eligibility. Using the correct AU formula ensures
+                            your conversion is accepted universally.
+                        </p>
+
+                        <!-- More University Pages -->
+                        <div
+                            class="mt-10 p-4 md:p-5 rounded-xl bg-(--c2)/40 border border-(--c3)/20"
+                        >
+                            <h3
+                                class="text-lg md:text-xl font-semibold text-(--c3) mb-2"
+                            >
+                                Explore More University Converters
+                            </h3>
+
+                            <ul class="space-y-2">
+                                <li>
+                                    <a
+                                        href="/universities/vtu-cgpa-to-percentage"
+                                        class="text-(--c3) underline underline-offset-4 hover:text-(--c4)"
+                                    >
+                                        VTU CGPA to Percentage →
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a
+                                        href="/universities/makaut-cgpa-to-percentage"
+                                        class="text-(--c3) underline underline-offset-4 hover:text-(--c4)"
+                                    >
+                                        MAKAUT CGPA to Percentage →
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a
+                                        href="/formulas"
+                                        class="text-(--c3) underline underline-offset-4 hover:text-(--c4)"
+                                    >
+                                        View all supported formulas →
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</Layout>

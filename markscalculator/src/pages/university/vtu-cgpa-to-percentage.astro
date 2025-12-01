@@ -1,0 +1,154 @@
+---
+import AstroGpaCalculator from "../../components/AstroGpaCalculator";
+import Layout from "../../layouts/Layout.astro";
+
+const title =
+    "VTU SGPA to Percentage Calculator (Official Formula) | CGPA to Percentage VTU";
+const description =
+    "Convert VTU SGPA and CGPA to percentage instantly using the official VTU formula: (CGPA - 0.75) x 10. Free VTU grade conversion calculator for students.";
+const keywords =
+    "VTU CGPA to Percentage, VTU SGPA to Percentage, VTU grade conversion, VTU formula, VTU percentage calculator, Visvesvaraya Technological University";
+const pageUrl =
+    "https://personal-projects-djf.pages.dev/university/vtu-cgpa-to-percentage";
+---
+
+<Layout {title} {description} {keywords} {pageUrl}>
+    <main
+        class="w-full min-h-screen flex flex-col items-center py-6 px-4 md:py-12 md:px-6"
+    >
+        <div class="w-full max-w-4xl mx-auto flex flex-col h-full">
+            <!-- HEADER -->
+            <header
+                class="text-center mb-6 md:mb-12 animate-in fade-in slide-in-from-top-4 duration-500"
+            >
+                <h1
+                    class="text-3xl md:text-5xl font-bold text-(--c3) mb-3 md:mb-4 tracking-tight"
+                >
+                    VTU SGPA to Percentage Calculator
+                </h1>
+                <p
+                    class="text-base md:text-xl text-(--c4) opacity-80 max-w-2xl mx-auto leading-relaxed"
+                >
+                    Convert your VTU SGPA and CGPA to percentage instantly using
+                    the official Visvesvaraya Technological University formula:
+                    <strong>(CGPA - 0.75) x 10</strong>.
+                </p>
+            </header>
+
+            <!-- CALCULATOR -->
+            <div
+                class="w-full max-w-[580px] mx-auto mb-20 md:p-2 md:border md:border-(--c3)/30 md:bg-(--c2) md:shadow-2xl md:rounded-2xl md:backdrop-blur-sm transition-all duration-300"
+            >
+                <AstroGpaCalculator client:load />
+            </div>
+
+            <!-- SEO CONTENT -->
+            <section
+                class="max-w-3xl mx-auto space-y-8 pb-10 border-t border-(--c3)/20 pt-10 md:pt-16"
+            >
+                <div class="prose prose-invert max-w-none text-(--c4)">
+                    <div
+                        class="bg-(--c2)/50 rounded-2xl p-6 md:p-8 border border-(--c3)/10 shadow-sm"
+                    >
+                        <!-- WHAT IS VTU FORMULA -->
+                        <h2 class="text-2xl font-bold text-(--c3) mb-4">
+                            Official VTU CGPA to Percentage Formula
+                        </h2>
+
+                        <p
+                            class="leading-7 opacity-90 mb-4 text-sm md:text-base"
+                        >
+                            VTU (Visvesvaraya Technological University) follows
+                            a standardized calculation method for converting
+                            CGPA into percentage. This formula is recognized and
+                            accepted by:
+                        </p>
+
+                        <ul class="list-disc pl-6 opacity-90 mb-6 space-y-1">
+                            <li>VTU-affiliated engineering colleges</li>
+                            <li>Placement cells</li>
+                            <li>Higher education applications</li>
+                            <li>Transcript and WES evaluations</li>
+                        </ul>
+
+                        <div
+                            class="p-4 bg-(--c2)/50 border border-(--c3)/20 rounded-xl mb-6"
+                        >
+                            <p class="font-semibold text-(--c3)">
+                                <strong>Percentage = (CGPA - 0.75) x 10</strong>
+                            </p>
+                        </div>
+
+                        <p
+                            class="leading-7 opacity-90 text-sm md:text-base mb-6"
+                        >
+                            This is the only official VTU formula. If you are
+                            applying for jobs, universities, or government
+                            exams, use this formula to avoid rejection due to
+                            incorrect conversions.
+                        </p>
+
+                        <!-- SGPA EXPLANATION -->
+                        <h3 class="text-xl font-semibold text-(--c3) mb-3">
+                            How VTU SGPA to CGPA Works
+                        </h3>
+
+                        <p
+                            class="leading-7 opacity-90 mb-4 text-sm md:text-base"
+                        >
+                            SGPA is calculated for each semester, whereas CGPA
+                            is the weighted average of all completed semesters.
+                            If you don't know your CGPA yet, use our
+                            calculator's
+                            <span class="font-semibold text-(--c3)"
+                                >SGPA → CGPA</span
+                            > tab.
+                        </p>
+
+                        <!-- HOW TO USE TOOL -->
+                        <h3 class="text-xl font-semibold text-(--c3) mb-3">
+                            How to Use This VTU Converter
+                        </h3>
+
+                        <ol
+                            class="list-decimal pl-6 opacity-90 space-y-2 text-sm md:text-base"
+                        >
+                            <li>Enter your CGPA or SGPA.</li>
+                            <li>Select "<strong>To Percentage</strong>".</li>
+                            <li>
+                                The calculator applies the VTU official formula.
+                            </li>
+                            <li>Get your accurate percentage instantly.</li>
+                        </ol>
+
+                        <!-- FORMULA TEASER -->
+                        <div
+                            class="mt-8 p-4 md:p-5 rounded-xl bg-(--c2)/40 border border-(--c3)/20"
+                        >
+                            <h3
+                                class="text-lg md:text-xl font-semibold text-(--c3) mb-2"
+                            >
+                                Need Other Universities' Formulas?
+                            </h3>
+                            <p
+                                class="text-sm md:text-base opacity-90 leading-relaxed mb-4"
+                            >
+                                Apart from VTU, we support formulas for MAKAUT,
+                                CBSE, DU, JNTU, Anna University, and many more.
+                                Every university has its own unique conversion
+                                rule.
+                            </p>
+
+                            <a
+                                href="/formulas"
+                                class="inline-block mt-1 text-(--c3) hover:text-(--c4) font-medium underline underline-offset-4 transition-colors"
+                            >
+                                View all supported formulas →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</Layout>

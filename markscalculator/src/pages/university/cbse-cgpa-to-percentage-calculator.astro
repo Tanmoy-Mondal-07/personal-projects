@@ -1,0 +1,173 @@
+---
+import AstroGpaCalculator from "../../components/AstroGpaCalculator";
+import Layout from "../../layouts/Layout.astro";
+
+const title =
+    "CBSE CGPA to Percentage Calculator (Official Formula) | Class 10th & 12th";
+const description =
+    "Convert your CBSE CGPA (Cumulative Grade Point Average) to Percentage instantly using the official CBSE formula: CGPA x 9.5. Free, fast, and accurate calculator for Class 10 & 12 students.";
+const keywords =
+    "CBSE CGPA to Percentage, CBSE CGPA to Percentage Calculator, CBSE formula, CGPA x 9.5, Class 10 Percentage from CGPA, Class 12 Percentage, CBSE grade conversion, Cumulative Grade Point Average";
+const pageUrl =
+    "https://personal-projects-djf.pages.dev/university/cbse-cgpa-to-percentage-calculator";
+---
+
+<Layout {title} {description} {keywords} {pageUrl}>
+    <main
+        class="w-full min-h-screen flex flex-col items-center py-6 px-4 md:py-12 md:px-6"
+    >
+        <div class="w-full max-w-4xl mx-auto flex flex-col h-full">
+            <header
+                class="text-center mb-6 md:mb-12 animate-in fade-in slide-in-from-top-4 duration-500"
+            >
+                <h1
+                    class="text-3xl md:text-5xl font-bold text-(--c3) mb-3 md:mb-4 tracking-tight"
+                >
+                    Official CBSE CGPA to Percentage Calculator
+                </h1>
+                <p
+                    class="text-base md:text-xl text-(--c4) opacity-80 max-w-2xl mx-auto leading-relaxed"
+                >
+                    Convert your CBSE CGPA to an equivalent percentage
+                    instantly. Our calculator uses the official formula for
+                    Class 10th and 12th students:
+                    <strong>Percentage = CGPA x 9.5</strong>.
+                </p>
+            </header>
+
+            <div
+                class="w-full max-w-[580px] mx-auto mb-20 md:p-2 md:border md:border-(--c3)/30 md:bg-(--c2) md:shadow-2xl md:rounded-2xl md:backdrop-blur-sm transition-all duration-300"
+            >
+                <AstroGpaCalculator client:load passformulaPreset="cbse" />
+            </div>
+
+            <section
+                class="max-w-3xl mx-auto space-y-8 pb-10 border-t border-(--c3)/20 pt-10 md:pt-16"
+            >
+                <div class="prose prose-invert max-w-none text-(--c4)">
+                    <div
+                        class="bg-(--c2)/50 rounded-2xl p-6 md:p-8 border border-(--c3)/10 shadow-sm"
+                    >
+                        <h2 class="text-2xl font-bold text-(--c3) mb-4">
+                            The Official CBSE CGPA to Percentage Conversion
+                            Formula
+                        </h2>
+
+                        <p
+                            class="leading-7 opacity-90 mb-4 text-sm md:text-base"
+                        >
+                            The Central Board of Secondary Education (CBSE)
+                            provides a standard, official method for converting
+                            the Cumulative Grade Point Average (CGPA) into an
+                            indicative percentage. This conversion factor of 9.5
+                            is officially accepted for all academic,
+                            professional, and higher education applications.
+                        </p>
+
+                        <div
+                            class="p-4 bg-(--c2)/50 border border-(--c3)/20 rounded-xl mb-6"
+                        >
+                            <p class="font-semibold text-(--c3)">
+                                <strong>CBSE Percentage = CGPA x 9.5</strong>
+                            </p>
+                        </div>
+
+                        <p
+                            class="leading-7 opacity-90 text-sm md:text-base mb-6"
+                        >
+                            This is the authoritative formula to get your CBSE
+                            Class 10th percentage from CGPA. Whether you are
+                            applying to colleges, universities (domestic or
+                            international), or using it for a job application,
+                            using the $\times 9.5$ conversion is mandatory to
+                            ensure accuracy and avoid discrepancies.
+                        </p>
+
+                        <h3 class="text-xl font-semibold text-(--c3) mb-3">
+                            Why does CBSE use the 9.5 Multiplier?
+                        </h3>
+
+                        <p
+                            class="leading-7 opacity-90 mb-4 text-sm md:text-base"
+                        >
+                            The 9.5 multiplier used by CBSE comes from a
+                            long-term statistical study. CBSE looked at the
+                            average marks scored by students who received the
+                            highest grade (A1 or Grade Point 10). Their average
+                            score was found to be around
+                            <strong>95</strong>. To create a fair conversion
+                            formula, CBSE divided this average by the top Grade
+                            Point (10), resulting in:
+                            <strong>95 ÷ 10 = 9.5</strong>. This is why CGPA is
+                            multiplied by 9.5 to convert it into a percentage.
+                        </p>
+
+                        <h3 class="text-xl font-semibold text-(--c3) mb-3">
+                            How to Use the Free CBSE Percentage Converter
+                        </h3>
+
+                        <p
+                            class="leading-7 opacity-90 mb-4 text-sm md:text-base"
+                        >
+                            Our online tool makes the calculation simple and
+                            instant.
+                        </p>
+
+                        <ol
+                            class="list-decimal pl-6 opacity-90 space-y-2 text-sm md:text-base"
+                        >
+                            <li>
+                                Locate your Overall CGPA from your CBSE Class 10
+                                or 12 marksheet.
+                            </li>
+                            <li>
+                                Enter your CGPA value into the calculator above.
+                            </li>
+                            <li>
+                                The calculator will automatically apply the CGPA
+                                $\times$ 9.5 formula.
+                            </li>
+                            <li>
+                                Get your accurate CBSE percentage displayed
+                                immediately.
+                            </li>
+                        </ol>
+
+                        <br
+                            class="mt-8 p-4 md:p-5 rounded-xl bg-(--c2)/40 border border-(--c3)/20"
+                        >
+                            <h3
+                                class="text-lg md:text-xl font-semibold text-(--c3) mb-2"
+                            >
+                                Looking for other Boards or Universities?
+                            </h3>
+                            <p
+                                class="text-sm md:text-base opacity-90 leading-relaxed mb-4"
+                            >
+                                We provide official conversion calculators for
+                                all major Indian boards and universities,
+                                including ICSE, UP Board, DU, VTU, Anna
+                                University, and more.
+                            </p>
+
+                            <a
+                                href="https://www.cbse.gov.in/circulars/cir24-2010.pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="mb-5 inline-block mt-1 text-(--c4) hover:text-(--c4) font-medium underline underline-offset-4 transition-colors"
+                            >
+                                📌 Official CBSE Document →
+                            </a></br>
+                            <a
+                                href="/formulas"
+                                class="inline-block mt-1 text-(--c4) hover:text-(--c3) font-medium underline underline-offset-4 transition-colors"
+                            >
+                                View all supported formulas →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</Layout>

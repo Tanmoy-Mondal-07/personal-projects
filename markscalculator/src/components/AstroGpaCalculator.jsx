@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Percent, GraduationCap, Settings, RotateCcw, ChevronDown, ChevronUp, Plus, Minus } from 'lucide-react';
 
-const GradeConverter = () => {
+const GradeConverter = ({ passformulaPreset = '' }) => {
   const [activeTab, setActiveTab] = useState('percentage');
 
   // --- STATE FOR PERCENTAGE CONVERTER ---
@@ -12,6 +12,13 @@ const GradeConverter = () => {
   const [deduction, setDeduction] = useState(0.75);
   const [showSettings, setShowSettings] = useState(false);
   const [percentResult, setPercentResult] = useState(null);
+
+  useEffect(() => {
+    if (passformulaPreset !== '') {
+      setFormulaPreset(passformulaPreset);
+    }
+  }, [passformulaPreset]);
+
 
   // --- STATE FOR SGPA -> CGPA ---
   const [numSemesters, setNumSemesters] = useState(2);
@@ -35,6 +42,10 @@ const GradeConverter = () => {
       case 'cbse':
         setMultiplier(9.5);
         setDeduction(0);
+        break;
+      case 'JNTUH':
+        setMultiplier(10);
+        setDeduction(5.0);
         break;
       default:
         break;
